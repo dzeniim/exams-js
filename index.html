@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vezbanje js</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    
+    <div class="avatarregion">
+    <img id="bannerImage" src="whitebg.png">
+    
+  <div class="group"><button id="patrik" class="ordinary first"onclick="document.getElementById('bannerImage').src='download.png'">1</button>
+ <button class="ordinary second" onclick="document.getElementById('bannerImage').src='plankton.jpg'">2</button>
+ <button class="ordinary third"  onclick="document.getElementById('bannerImage').src='kebakraba.png'">3</button>
+ <button class="ordinary fourth"  onclick="document.getElementById('bannerImage').src='biserka.png'">4</button>
+ <button class="ordinary fifth"  onclick="document.getElementById('bannerImage').src='sundjerbob.jpg'">5</button>
+ <button class="ordinary sixth" onclick="document.getElementById('bannerImage').src='gari.jpg'">6</button>
+ <button class="ordinary seventh" onclick="document.getElementById('bannerImage').src='lignjoslav.jpg'">7</button>
+  </div>
+
+    </div>
+
+
+    <script>
+      function changeImage(fileName){
+        let img = document.querySelector("#bannerImage");
+        img,setattribute("src");
+      }
+        </script>
+
+</body>
+</html>
