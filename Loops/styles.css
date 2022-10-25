@@ -39,3 +39,20 @@ table {
     background-color: #09bfed;
     color: white;
   }
+  #buzz{
+    background-color: #d6d3b1;
+    border: none;
+    
+  }
+  #fizz{
+    background-color: #d6d3b1;
+    border: none;
+  }
+  #buzzfizz{
+    background-color: #d6d3b1;
+    border: none;
+  }
+  #resultbutton{
+    background-color: transparent;
+    border: none;
+  }
