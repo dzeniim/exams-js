@@ -1,0 +1,41 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    background-image: url(3.jpg);
+}
+.stl{
+    padding: 25px;
+    border-radius: 50px;
+    background-color: #09bfed;
+    text-align: center;
+    border-color:white;
+    font-style: oblique;
+    color: white;
+    font-size: larger;
+    
+}
+table {
+    
+    width: 50%;
+  }
+  
+  th, td {
+    text-align: center;
+    padding: 15px;
+  }
+  
+  tr:nth-child(even){background-color: #d6d3b1}
+  
+  th {
+    background-color: #09bfed;
+    color: white;
+  }
