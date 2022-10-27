@@ -10,11 +10,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
-    align-items: center;
     height: 100vh;
     width: 100%;
-    background-image: url(pozadina.jpg);
+    background-image: url(kockice.svg)
     
     
 }
@@ -38,29 +36,32 @@
     width: 120px;
     height: 38px;
     padding-left: 20px;
+    margin-left: 10px;
     
 }
 
 
 
 .btnn1 {
-    background-color: #6401ef;
-    border: 2px solid #6401ef;
-    padding: 10px 65px;
+    background-color: transparent;
+    border: 2px solid #68b381;
+    padding: 10px 10px;
+    margin-left: 60px;
+    margin-top: 10px;
     
-    margin-left:250px;
-    color: white;
+    
+    color: #68b381;
 }
 
 .btnn1:hover {
-   background-color: #802dad;
-   border: 2px solid #802dad;
+   
+   border: 2px solid transparent;
 }
 
 .button{
-    background-color: #6401ef;
-    border: none;
-    color: white;
+    background-color: transparent;
+    border: 2px solid #68b381;
+    color: #68b381;
     padding: 11px 32px;
     text-align: center;
     text-decoration: none;
@@ -75,17 +76,48 @@
 
 
 .btnn2 {
-    background-color: #6401ef;
-    border: 2px solid #6401ef;
+    background-color: transparent;
+    border: 2px solid #68b381;
     padding: 10px 26px;
-    
-    color: white;
-    margin-left: 400px;
-    margin-top: 30px;
+    font-size: 16px;
+    color: #68b381;
+    margin-left: 30px;
+    margin-top: 10px;
     
 }
 
 .btnn2:hover {
-   background-color: #6a00ff;
-   border-color: #6a00ff;
+   
+   border-color:transparent;
 }
+
+
+
+
+
+
+
+
+
+#customers {
+    font-family: Arial, Helvetica, sans-serif;
+    
+    width: 70%;
+  }
+  
+  #customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #customers tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #customers tr:hover {background-color: #ddd;}
+  
+  #customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #68b381;
+    color: white;
+  }
