@@ -4,13 +4,46 @@
     margin: 0;
 }
 
-
+.container3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-image: url(poslednja.jpg)
+    
+    
+}
+.container2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-image: url(zeleniloooomiloo.jpg)
+    
+}
+.textarea{
+    padding: 20px;
+    width: 500px;
+    height: 200px;
+    text-align: center;
+    color: white;
+    background-color: #68b381;
+}
+.end{
+    color: rgb(8, 6, 6);
+    text-align: center;
+    font-style: italic;
+    font-size: larger;
+    font-weight: 300;
+}
 
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 120vh;
     width: 100%;
     background-image: url(kockice.svg)
     
@@ -70,6 +103,7 @@
     margin-left: 20px;
     margin-top: 15px;
     cursor: pointer;
+    margin-bottom: 10px;
 }
 
 
