@@ -3,6 +3,16 @@
     padding: 0;
     margin: 0;
 }
+.container4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    background-image: url(zeleniloooomiloo.jpg)
+    
+}
 
 .container3{
     display: flex;
@@ -154,4 +164,61 @@
     text-align: center;
     background-color: #68b381;
     color: white;
+  }
+
+
+
+  
+
+
+  .stl{
+    padding: 15px;
+    margin-top: 15px;
+
+    background-color: #64c7a6;
+    text-align: center;
+    border-color:white;
+    font-style: oblique;
+    color: white;
+    font-size: larger;
+    
+}
+table {
+    
+    width: 50%;
+  }
+  
+  th, td {
+    text-align: center;
+    padding: 15px;
+  }
+  
+  tr:nth-child(even){background-color: #d6d3b1}
+  
+  th {
+    background-color: #f2f5f6;
+    color: black;
+  }
+  #buzz{
+    background-color: #64c7a6;
+    border: none;
+    
+  }
+  #fizz{
+    background-color: #64c7a6;
+    border: none;
+  }
+  #buzzfizz{
+    background-color: #64c7a6;
+    border: none;
+  }
+  #resultbutton{
+    background-color: #64c7a6;
+    text-align: center;
+    border-color:white;
+    padding: 15px;
+    margin:20px ;
+  }
+  .tbl{
+    background-color: #64c7a6;
   }
