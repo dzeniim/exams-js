@@ -37,9 +37,9 @@ document.getElementById("so").addEventListener("click", function () {
 });
 */
 ///
-var ocene= [];                             /*deklarisemo(inicijaliziramo niz()*/
+var ocene= [];                             /*deklarisemo(inicijaliziramo niz)*/
 var suma=0;
-var k=0;
+
 
 
 
@@ -62,17 +62,21 @@ function pushNumber() {
     
   });
 
+  
+
   document.getElementById("so").addEventListener("click", function () { 
     
           
-    for (var i = 0; i< ocene.length; i++) { suma+=ocene[i]}
-    console.log( "Srednja ocena iznosi :" + suma/ocene.length);
-    console.log("Ukupno ocena " + ocene.length)
-    console.log("Prva ocena koju je dobio ucenik je: " + ocene[0])
-    
-    if(k<=ocene){
-        console.log('Ucenik je dobio nedovoljnu ocenu'+ k);k++
+    for (var i = 0; i< ocene.length; i++) { 
+      suma=suma+ocene[i];
     }
+    console.log( "Srednja ocena iznosi :" + suma/ocene.length);
+    console.log("Ukupno ocena " + ocene.length);
+    console.log("Prva ocena koju je dobio ucenik je: " + ocene[0]);
+    var indexposlednjecifre=ocene.length-1;
+    console.log("Poslednja ocena koju je dobio ucenik je: " + ocene[indexposlednjecifre]);
+    
+  
 });
 document.getElementById("showgrades").addEventListener("click", function () {
 document.getElementById("showgrades").textContent = ocene;
@@ -93,3 +97,42 @@ Identifikator (u novijim verzijama JavaScripta) može sadržati i slova nacional
  /*Niz je složena promenljiva koja sadrži više drugih promenljivih u sebi.
   Svaka promenljiva u nizu ima svoj redni broj (ili indeks, kako ćemo ga zvati u nastavku), pomoću kog se može naći vrednost koja nam treba.*/
 /*ako iza imena niza stavimo .length dobićemo koliko ima elemenata u nizu (npr. br.length predstavlja broj elemenata u nizu br). */
+
+
+
+/*TABLICA MNOZENJA*/
+
+
+
+
+//////////////////za osnovne operacije/////
+document.getElementById("plus").addEventListener("click", function () {
+  a = +document.getElementById("1br").value;
+  b = +document.getElementById("2br").value;
+  rezultat = a + b;
+  document.getElementById("rezultat").textContent = rezultat;
+});
+
+// ODUZMI
+document.getElementById("minus").addEventListener("click", function () {
+  a = +document.getElementById("1br").value;
+  b = +document.getElementById("2br").value;
+  rezultat = a - b;
+  document.getElementById("rezultat").textContent = rezultat;
+});
+
+// PODELI
+document.getElementById("deljenje").addEventListener("click", function () {
+  a = +document.getElementById("1br").value;
+  b = +document.getElementById("2br").value;
+  rezultat = a / b;
+  document.getElementById("rezultat").textContent = rezultat;
+});
+
+// POMNOZI
+document.getElementById("mnozenje").addEventListener("click", function () {
+  a = +document.getElementById("1br").value;
+  b = +document.getElementById("2br").value;
+  rezultat = a * b;
+  document.getElementById("rezultat").textContent = rezultat;
+});
