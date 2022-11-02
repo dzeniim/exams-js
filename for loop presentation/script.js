@@ -102,7 +102,24 @@ Identifikator (u novijim verzijama JavaScripta) može sadržati i slova nacional
 
 /*TABLICA MNOZENJA*/
 
+var i, j;
 
+var tablica = document.getElementById("tablica"); 
+for (i = 1; i <= 10; i++) {
+  var row = document.createElement("tr"); //create element koristiomo da bismo kreirali novi element logicno...
+  var th = document.createElement("th"); 
+  th.textContent = i;
+  row.appendChild(th);
+
+  for (j = 1; j <= 10; j++) {
+    var proizvod = i * j;
+    var td = document.createElement("td");
+    td.textContent = proizvod;
+    row.appendChild(td);
+  }
+
+  tablica.appendChild(row);
+}
 
 
 //////////////////za osnovne operacije/////
