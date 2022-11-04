@@ -98,6 +98,7 @@ Identifikator (u novijim verzijama JavaScripta) može sadržati i slova nacional
   Svaka promenljiva u nizu ima svoj redni broj (ili indeks, kako ćemo ga zvati u nastavku), pomoću kog se može naći vrednost koja nam treba.*/
 /*ako iza imena niza stavimo .length dobićemo koliko ima elemenata u nizu (npr. br.length predstavlja broj elemenata u nizu br). */
 
+//arr.length-1 za poslednji
 
 
 /*TABLICA MNOZENJA*/
@@ -152,4 +153,20 @@ document.getElementById("mnozenje").addEventListener("click", function () {
   b = +document.getElementById("2br").value;
   rezultat = a * b;
   document.getElementById("rezultat").textContent = rezultat;
+});
+
+////////////////text u javiscript vezbanje
+
+document.getElementById("send").addEventListener("click", function( ) {
+ 
+  var Ime,surname,starost,poruka,zavrsniZapis;
+    Ime= document.getElementById("Ime").value;
+    surname= document.getElementById("surname").value;
+    starost= document.getElementById("age").value;
+    poruka= document.getElementById("messagee").value;
+
+     zavrsniZapis ="Ja" + " "+  Ime + " " +surname + "Tvrdim da imam" + " "+ starost +" "+ "godina . "+ 'I svojevoljno izjavljujem da' + poruka;
+
+   document.getElementById("poruka").textContent = zavrsniZapis;
+
 });
