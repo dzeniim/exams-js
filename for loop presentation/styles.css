@@ -82,6 +82,40 @@
     background-image: url(zeleniloooomiloo.jpg)
     
 }
+.section7{
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  
+}
+.section8{
+display: flex;
+flex-direction:column;
+justify-content: center;
+align-items: center;
+height: 100vh;
+width: 100%;}
+
+.zabrojeve{
+  padding: 25px;
+  background-color:#68b3a9;
+  border: none;
+border-radius: 50px;
+}
+.brr{
+  
+  background-color: #68b3a9;
+  color: #f7f4f6;
+  border: #ddd;
+  margin-left: 20px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  padding: 30px;
+}
+
 .send{
   padding: 25px;
   align-items: center;
