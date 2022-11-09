@@ -266,7 +266,18 @@ var izabraniBroj= arr[i]
   }
   if (typeof izabraniBroj==="undefined") {
     undefinedd.push(izabraniBroj)
-    console.log( " Element sa indexom"+ "("+ [i] +")" + " ovog niza je nedefinisan" +undefinedd)
+    console.log( " Element sa indexom "+ "("+ [i] +")" + " ovog niza je nedefinisan" +undefinedd)
   }
  
 }
+
+
+var text="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
+ var recenice=text.split(".");
+ var recI=text.split(" ")
+
+ console.log( text.length +""+ " slova");
+ console.log( recenice);
+ console.log( recI);
+ console.log( recenice.length +""+ " recenice");
+ console.log( recI.length +""+ " reci");
