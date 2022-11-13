@@ -122,6 +122,10 @@
 
 //   tablica.appendChild(row);
 // }
+/*var i = 1
+var fizzbuzzfound falsewhile uzvicnik fizzbuzzfound 
+if i %3 
+console.log i, fizzbuzzfoundfizzbuzz true console.log i*/
 
 
 // //////////////////za osnovne operacije/////
@@ -242,7 +246,7 @@ for (i = 0; i <= rezultat.length - 2; i++) {
 
 console.log(rezultat)*/
 
-var arr = [1,2,"text",undefined,true,false,7,"test 1234",];
+/*var arr = [1,2,"text",undefined,true,false,7,"test 1234",];
 var numbers = [];
 var text = [];
 var booleans = [];
@@ -269,6 +273,7 @@ var izabraniBroj= arr[i]
     console.log( " Element sa indexom "+ "("+ [i] +")" + " ovog niza je nedefinisan" +undefinedd)
   }
  
-}
+}*/
+
 
 
