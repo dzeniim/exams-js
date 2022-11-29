@@ -52,7 +52,7 @@ console.log(noviniz)
 console.log("Duzina pozitivnih brojeva je  " + noviniz.length)
 console.log(niz)
 console.log(druginiz)
-console.log(suma)*/
+console.log(suma)
 
 
 
@@ -114,31 +114,31 @@ var brojevi = [1, 2, 3, 4, 5, 6, 7, 7, 9, 0, 7]
 var zvonizvonii = []
 
 for (i = 0; i <= brojevi.length - 1; i++) {
+zvonizvonii.push(brojevi[0,1,2])
+
 
 }
+console.log(zvonizvonii)
 
 
 
 /*6.Zadatak
 Sortirati niz po njegovoj duzini */
 
-var reci = ["Teleskop", "Mikroskop", "Trofej", "Salata"]
-var sortiranniz = []
-
-for (var i = 0; i <= reci.length - 1; i++) {
-   for (var j = 0; j <= reci.length - 1; j++) {
-      if (reci.length[j] > reci.length[i]) {
-         var pom = reci.length[i];
-         reci.length[i] = reci.length[j];
-         reci.length[j] = pom;
-
-         sortiranniz.push(pom)
-      }
+function sortByLength(array) {
+   // array => niz stringova
+   // ["hello", "world", "bye", "welcome"]
+   for (var i = 0; i <= array.length - 1; i++) {
+     for (var j = 0; j <= array.length - 1; j++) {
+       if (array[i].length < array[j].length) {
+         var pom = array[i];
+         array[i] = array[j];
+         array[j] = pom;
+       }
+     }
    }
-}
-console.log(reci);
-console.log(sortiranniz)
-
+   return array;
+ }
 
 /*7.zadatak
 Da od odredjenog niza izdvojimo dva najveca broja
@@ -164,4 +164,25 @@ for (i = 0; i <= godine.length-1; i++) {
 
 }
 console.log(stariji)
-console.log(godine)
+console.log(godine[0])
+console.log(godine[1])
+
+/*8.Zadatak
+Da od datih reci  napravim talase:) */
+function wave(str) {
+   var wavedStrings = [];
+   for (var i = 0; i <= str.length - 1; i++) {
+     var word = str.toLowerCase(); // sva slova u stringu pretvara u mala slova
+     var letters = word.split(""); // "hello".split("") ===> ["h", "e", "l", "l", "o"]
+     // split => "hey hello world".split(" ") === ["hey", "hello", "world"]
+     if (letters[i] === " ") {
+       continue;
+     }
+     letters[i] = letters[i].toUpperCase(); // pretvara sva slova u velika slova
+     // za i=0 ===> letters = ["H", "e", "l", "l", "o"]
+     // za i=1 ===> letters = ["h", "E", "l", "l", "o"]
+     word = letters.join("");
+     wavedStrings.push(word);
+   }
+   return wavedStrings;
+ }

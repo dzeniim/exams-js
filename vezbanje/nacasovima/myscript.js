@@ -1,3 +1,5 @@
+
+
 var godine = [3, 5, 8, 9]
 var stariji = []
 
@@ -18,8 +20,8 @@ for (i = 0; i <= godine.length - 1; i++) {
 }
 console.log(godine)
 console.log(stariji)
-console.log(godine[0])
-console.log(godine[1])
+console.log(godine[0] + " Prva starija cifra")
+console.log(godine[1] + " Druga starija cifra")
 
 
 
@@ -55,28 +57,23 @@ function checkExams(corect, student) {
 }
 
 /*3.zadatak 
-Proveriti da li je niz sortiran i kako je sortiran
+Naci najmanju vrednost niza i vratitit njegov index
 
 */
-var typeOfSort;
-if (array[0] < array[1]) {
-    typeOfSort = "yes, ascending";
-} else if (array[0] > array[1]) {
-    typeOfSort = "yes, descending";
-} else {
-    typeOfSort = "no"
-    return typeOfSort;
-}
-for (var i = 1; i <= array.length - 1; i++) {
-    if (typeOfSort === "yes, ascending" && array[i - 1] > array[i]) {
-        typeOfSort = "no";
-        break;
+function min(arr, toReturn) {
+    var minimum = arr[0];
+    var minIndex = 0;
+    for (var i = 1; i <= arr.length - 1; i++) {
+        if (arr[i] < minimum) {
+            minimum = arr[i];
+            minIndex = i;
+        }
     }
-    if (typeOfSort === "yes, descending" && array[i - 1] < array[i]) {
-        typeOfSort = "no";
-        break;
+    if (toReturn === "index") {
+        return minIndex;
+    } else if (toReturn === "value") {
+        return minimum;
     }
-    return typeOfSort;
 }
 
 
@@ -131,22 +128,38 @@ var capitals = function (word) {
 Proveriti jel sortiran niz i kako je sortiran
 */
 
-var reci = ["Teleskop", "Mikroskop", "Trofej", "Salata"]
-var sortiranniz = []
-
-for (var i = 0; i <= reci.length - 1; i++) {
-    for (var j = 0; j <= reci.length - 1; j++) {
-        if (reci.length[j] > reci.length[i]) {
-            var pom = reci.length[i];
-            reci.length[i] = reci.length[j];
-            reci.length[j] = pom;
-
-            sortiranniz.push(pom)
-            sortiranniz.split
+function isSortedAndHow(array) {
+    // "ascending" - rastuce, "descending" - opadajuce, "no" - nije sortiran
+    // [1,3,6,9,6,11,16]
+    var typeOfSort;
+    if (array[0] < array[1]) {
+        typeOfSort = "yes, ascending";
+    } else if (array[0] > array[1]) {
+        typeOfSort = "yes, descending";
+    } else {
+        typeOfSort = "no"
+        return typeOfSort;
+    }
+    for (var i = 1; i <= array.length - 1; i++) {
+        if (typeOfSort === "yes, ascending" && array[i - 1] > array[i]) {
+            typeOfSort = "no";
+            break;
+        }
+        if (typeOfSort === "yes, descending" && array[i - 1] < array[i]) {
+            typeOfSort = "no";
+            break;
         }
     }
-}
-console.log(reci);
-console.log(sortiranniz)
+    return typeOfSort;
 
+}
+
+
+/*10.Zadatak
+Da dati niz vratim u formi broja telefona */
+
+var n = [1, 2, 3, 4, 5, 6, 7, 8, 9, 3]
+
+
+console.log("( "+ n[0] + n[1] + n[2] + ' - '+ n[3] + n[4] + n[5] + '-' + n[6] + n[7] + n[8] + "-"+ n[9]+ " )")
 
