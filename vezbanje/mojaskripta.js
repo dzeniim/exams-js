@@ -110,16 +110,10 @@ console.log(sklonjendrugielement)
 /*5. Zadatak
 od datog niza izdvojiti brojeve u formi broja telefona  */
 
-var brojevi = [1, 2, 3, 4, 5, 6, 7, 7, 9, 0, 7]
-var zvonizvonii = []
-
-for (i = 0; i <= brojevi.length - 1; i++) {
-zvonizvonii.push(brojevi[0,1,2])
+var n = [1, 2, 3, 4, 5, 6, 7, 8, 9, 3]
 
 
-}
-console.log(zvonizvonii)
-
+console.log("( "+ n[0] + n[1] + n[2] + ' - '+ n[3] + n[4] + n[5] + '-' + n[6] + n[7] + n[8] + "-"+ n[9]+ " )")
 
 
 /*6.Zadatak

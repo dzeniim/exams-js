@@ -158,8 +158,14 @@ function isSortedAndHow(array) {
 /*10.Zadatak
 Da dati niz vratim u formi broja telefona */
 
-var n = [1, 2, 3, 4, 5, 6, 7, 8, 9, 3]
+var n = [6,5,4,7,8,9,3,3,2]
 
 
 console.log("( "+ n[0] + n[1] + n[2] + ' - '+ n[3] + n[4] + n[5] + '-' + n[6] + n[7] + n[8] + "-"+ n[9]+ " )")
 
+/*11.Zadatak */
+var stupid=[1,6,7,7,6,8,9,9,0,7]
+
+for(i=0;i<=stupid.length-1;i++){
+    console.log(stupid.length)
+}
