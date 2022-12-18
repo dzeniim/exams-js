@@ -5,7 +5,7 @@ document.getElementById("calculate").addEventListener("click", function () {
 
   
     document.getElementById("result").textContent = intNumber + "%";
-    if (randomNumber < 40) {
+    if (randomNumber < 80) {
         document.getElementById("img").src =
         "broken-heart.png"
           
