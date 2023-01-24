@@ -14,9 +14,6 @@ function addGradeToArray(grade) {
   grades.push(grade);
   // ovde da sortiram niz a da napravim funkciju koja ce tom
 }
-function sortGrades(){
-    for 
-}
 
 function showTheArrayInConsole() {
   console.log(grades);
