@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.welcomepage {
+  width: 100%;
+  height: 60vh;
+  background-image: url("biblioteka.jpg");
+  position: relative;
+}
+.btn {
+  position: absolute;
+  top: 90%;
+  border-radius: 50%;
+  padding: 15px;
+  left: 46%;
+  border-color: white;
+  background-color: #65300eff;
+  color: beige;
+}
+
+input {
+  margin-top: 20px;
+
+  width: 50%;
+  height: 60px;
+  text-align: center;
+  font-size: 30px;
+  color: #fff;
+  border: 2px solid brown;
+  border-radius: 10px;
+  background-image: url("lights.jpg");
+  background-size: 800px;
+  background-position: center;
+}
+
+.center {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+
+  background-color: #65300eff;
+}
+
+.list {
+  display: block;
+  width: 100%;
+  height: 60vh;
+  padding: 40px;
+  overflow: auto;
+  opacity: 0.8;
+  margin-top: 50px;
+}
+
+.list li {
+  display: block;
+  list-style-type: none;
+  border: 6px outset rgb(149, 82, 6);
+  margin: 50px;
+  text-align: center;
+  padding: 20px;
+  color: whitesmoke;
+  font-family: centuru Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  top: 60px;
+  left: calc(70% - 300px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("biblioteka.jpg");
+}
+
+.card {
+  display: flex;
+  height: 500px;
+  width: 300px;
+  background-color: #65300eff;
+  border-radius: 10px;
+  box-shadow: -1rem 0 3rem rgb(18, 16, 16);
+
+  transition: 0.7s ease-in-out;
+  position: relative;
+  left: 0px;
+}
+
+.card:not(:first-child) {
+  margin-left: -50px;
+}
+
+.card:hover {
+  transform: translateY(-20px);
+  transition: 0.4s ease-out;
+  background-color: rgb(130, 70, 33);
+}
+
+.card:hover ~ .card {
+  position: relative;
+  left: 50px;
+  transition: 0.4s ease-out;
+}
+
+.title {
+  color: white;
+  font-weight: 700;
+  position: absolute;
+  left: 50px;
+  top: 20px;
+}
+a {
+  color: blue;
+  text-decoration: underline;
+}
+
+.bar {
+  position: absolute;
+  top: 100px;
+  left: 20px;
+  height: 5px;
+  width: 150px;
+  color: #fff;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  padding-top: 15px;
+}
+
+.emptybar {
+  background-color: #a96851;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  color: #fff;
+}
