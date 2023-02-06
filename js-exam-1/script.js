@@ -93,3 +93,11 @@ document.getElementById("search").addEventListener("keydown", function () {
   });
   renderQuotes();
 });
+
+
+
+
+
+
+
+
